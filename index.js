@@ -12,7 +12,7 @@
     });
 
     const $form = $('#js-shopping-list-form');
-    const $textInput = $form.find('#shopping-list-entry');
+    const $textInput = $('#shopping-list-entry');
     const $shoppingList = $('.shopping-list');
 
     // Adds item to shopping list
