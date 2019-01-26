@@ -1,8 +1,8 @@
 $(function addItem() {
     $('#js-shopping-list-form').submit(event => {
-        event.preventDefault();
+        event.preventDefault()
 
-        let userInput = $(this).find('#shopping-list-entry').val();
+        let userInput = $(this).find('#shopping-list-entry').val()
 
         let item = $('ul').append( 
             $( `
@@ -19,21 +19,21 @@ $(function addItem() {
                 </li>
             ` ))
 
-    });
+    })
 })
 
 function deleteItem() {
     $('ul').on('click', '.shopping-item-delete', function(event) {
         $(this).parents('li').remove();
-      });
+      })
 }
 
-$(deleteItem);
+$(deleteItem)
 
 function checkItem() {
     $('ul').on('click', '.shopping-item-toggle', function(event) {
         $(this).closest('li').find($('.shopping-item')).toggleClass('shopping-item__checked');
-      });
+      })
 }
 
-$(checkItem);
+$(checkItem)
